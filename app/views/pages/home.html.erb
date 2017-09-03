@@ -1,0 +1,96 @@
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="cards">
+    <ol class="carousel-indicators">
+      <li data-target="#CarouselexampleIndicators" data-slide-to="0" class="active">
+        <div class="card">
+          <div class="card-category">1. Events</div>
+          <div class="card-description">
+            <p>Wedding, Corporate, Party</p>
+          </div>
+          <div class="card-icon">
+            <%= image_tag ("paint-board.png") %>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </li>
+      <li data-target="#myCarousel" data-slide-to="1">
+        <div class="card">
+          <div class="card-category">2. Professional</div>
+          <div class="card-description">
+            <p>15 years experience</p>
+          </div>
+          <div class="card-icon">
+            <%= image_tag ("deal.png") %>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </li>
+      <li data-target="#myCarousel" data-slide-to="2">
+        <div class="card">
+          <div class="card-category">3. Quality</div>
+          <div class="card-description">
+            <p>15 years experience</p>
+          </div>
+          <div class="card-icon">
+            <%= image_tag ("medal.png") %>
+          </div>
+          <a class="card-link" href="#" ></a>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Wrapper for slides -->
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag asset_path('piano.jpg'), class: "carousel-img" %>
+      <div class="carousel-caption"> <!-- bootstrap class for carousel, cannot handle other classes-->
+        <div class="banner">
+          <div class="banner-category">Every moment is unique</div>
+            <div class="banner-description">
+              <p>Keep it in your memory</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag asset_path("diversity.jpg"), class: "carousel-img" %>
+      <div class="carousel-caption"> <!-- bootstrap class for carousel, cannot handle other classes-->
+        <div class="banner">
+          <div class="banner-category">Adapting to your needs</div>
+            <div class="banner-description">
+              <p>Because the evening belongs to you</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag asset_path("kouglofs3.png"), class: "carousel-img" %>
+      <div class="carousel-caption"> <!-- bootstrap class for carousel, cannot handle other classes-->
+        <div class="banner">
+          <div class="banner-category">A personal and unique style</div>
+            <div class="banner-description">
+              <p>Playing the music that suits best to you</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="bio">
+  <h2>TEST</h2>
+  <h3>Hello World</h3>
+</div>
+</div>
+</div>
+</div>

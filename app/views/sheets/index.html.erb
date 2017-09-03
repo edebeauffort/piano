@@ -1,0 +1,17 @@
+<div class="container sheets-list">
+  <div class="row">
+    <div class="col-xs-12">
+    <h1>All Music Sheets are here</h1>
+
+    <%= link_to "add new music sheet", new_sheet_path %>
+
+    <% @sheets.each do |sheet| %>
+      <h2>Title: <%= sheet.title %></h2>
+      <h2>Artist: <%= sheet.artist %></h2>
+      <h2>Genre: <%= sheet.genre %></h2>
+      <%=link_to "Open", sheet_path(sheet) %>
+      <%=link_to "Delete", sheet_path(sheet), method: :delete %>
+    <% end %>
+    </div>
+  </div>
+</div>

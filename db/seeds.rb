@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Sheet.create(title: "Everybody Hurts", artist: "REM", genre: "pop")
+Sheet.create(title: "Money, Money, Money", artist: "ABBA", genre: "pop")
+Sheet.create(title: "Hit The Road Jack", artist: "Ray Charles", genre: "Jazz")

@@ -1,0 +1,20 @@
+<div class="container sheet-new">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= form_for @sheet do |f| %>
+
+        <%= f.label :title, "Title"%>
+        <%= f.text_field :title %>
+
+        <%= f.label :artist, "Artist"%>
+        <%= f.text_field :artist %>
+
+        <%= f.label :genre, "Genre of music"%>
+        <%= f.text_field :genre %>
+
+        <%= f.submit %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
