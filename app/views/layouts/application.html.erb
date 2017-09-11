@@ -17,13 +17,11 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <script src="/js/vegas/vegas.min.js">
-    </script>
     <meta name="theme-color" content="#92a6b2">
-
   </head>
   <body class="body">
     <%= render 'shared/navbar' %>
+    <%= render 'shared/audiobar' %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= yield(:after_js) %>

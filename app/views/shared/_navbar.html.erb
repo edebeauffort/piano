@@ -1,15 +1,18 @@
 
 <div class="navbar-wagon navbar-fixed-top">
-
-  <div class="field" id="searchform">
-    <input type="text" id="searchterm" placeholder="search music sheet" />
-    <button type="button" id="search">Find</button>
+  <div class="search">
+    <div class="field" id="searchform">
+      <input type="text" id="searchterm" placeholder="search music sheet" />
+      <button type="button">Find</button>
+    </div>
+    <div class="sheetsbtn">
+      <%= link_to "all music sheets", sheets_path, class:"navbar-wagon-right navbar-wagon-item navbar-wagon-link" %>
+    </div>
   </div>
-  <%= link_to "See all music sheet", sheets_path %>
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <h3><%= image_tag ("logo.png") %></h3>
-    <% end %>
+  <h3><%= image_tag ("logo.png") %></h3>
+  <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">

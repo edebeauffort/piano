@@ -2,7 +2,7 @@
 
 .navbar-wagon {
   box-shadow: 0 1px 0px 0 rgba(250,250,250,0.4);
-  background: linear-gradient(180deg,rgba(0,0,0,.4),transparent);
+  background: transparent;
   transition: all 0.3s ease;
   height: 120px;
   padding: 0px 30px;
@@ -87,7 +87,6 @@
   display: flex;
   position: relative;
   width: 20%;
-
 }
 
 .field>input[type=text],
@@ -105,11 +104,30 @@
 }
 
 .field>button {
-  background-color: $blue;
-  color: $light-gray;
+  background-color: $light-gray;
+  color: $blue;
   border: none;
+  border-radius: 3px;
 }
 .field>button:hover {
   cursor:pointer;
 }
 
+#searchform {
+  height: 33px;
+}
+
+#searchterm {
+  box-shadow: 0 1px 0px 0 rgba(250,250,250,0.4);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sheetsbtn {
+  border: none;
+  border-radius: 3px;
+}
