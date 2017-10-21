@@ -11,7 +11,7 @@
             <p>Wedding, Corporate, Party</p>
           </div>
           <div class="card-icon">
-            <%= image_tag ("paint-board.png") %>
+            <%= image_tag ("paint-board-and-brush.png") %>
           </div>
           <a class="card-link" href="#" ></a>
         </div>
@@ -51,9 +51,9 @@
       <div class="carousel-caption"> <!-- bootstrap class for carousel, cannot handle other classes-->
         <div class="banner">
           <div class="banner-category">Every moment is unique</div>
-            <div class="banner-description">
-              <p>Keep it in your memory</p>
-            </div>
+          <div class="banner-description">
+            <p>Keep it in your memory</p>
+          </div>
         </div>
       </div>
     </div>
@@ -63,9 +63,9 @@
       <div class="carousel-caption"> <!-- bootstrap class for carousel, cannot handle other classes-->
         <div class="banner">
           <div class="banner-category">Adapting to your needs</div>
-            <div class="banner-description">
-              <p>Because the evening belongs to you</p>
-            </div>
+          <div class="banner-description">
+            <p>Because the evening belongs to you</p>
+          </div>
         </div>
       </div>
     </div>
@@ -75,27 +75,35 @@
       <div class="carousel-caption"> <!-- bootstrap class for carousel, cannot handle other classes-->
         <div class="banner">
           <div class="banner-category">A personal and unique style</div>
-            <div class="banner-description">
-              <p>Playing the music that suits best to you</p>
-            </div>
+          <div class="banner-description">
+            <p>Playing the music that suits best to you</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+
+<%= render 'bio' %>
+
+<%= render 'events' %>
+
+<%= render 'opinions' %>
+
+<%= render 'contact' %>
+
 <div class="container">
-<div class="row">
-<div class="col-xs-12">
-<div class="bio">
-  <h2>TEST</h2>
-  <h3>Hello World</h3>
-  <p> Hello World Commit Test</p>
-<audio controls>
-  <source src="/path/to/audio.mp3" type="audio/mp3">
-  <source src="/path/to/audio.ogg" type="audio/ogg">
-</audio>
-</div>
-</div>
-</div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="bio">
+        <h1>TEST AUDIO</h1>
+        <h3>Début du test ici</h3>
+        <audio autoplay controls>
+          <source src="/Modus_Operandi_-_Sonata_Rabidus.mp3" type="audio/mp3">
+          </audio>
+        <h3>Fin du test ici</h3>
+      </div>
+    </div>
+  </div>
 </div>

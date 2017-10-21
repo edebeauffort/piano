@@ -1,4 +1,25 @@
-.whiteSpace{
-  background-color: transparent;
-  height: 1280px;
+.bio-img {
+  width: 740px;
+  height: auto;
+  margin: 30px 30px 30px 0px
 }
+
+.bio {
+  //text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description{
+  line-height: 175%;
+  p {
+    color: $dark-gray;
+  }
+  h1{
+    color: $blue;
+  }
+}
+
+
