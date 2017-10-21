@@ -4,6 +4,7 @@
  width: 100%;
  font-family: helvetica, arial, verdana, sans-serif;
  font-weight: normal;
+ background-color: $light-gray;
  /* prevent background border bleed */
  -webkit-background-clip: padding-box;
  background-clip: padding-box;
@@ -90,7 +91,7 @@
 .sm2-bar-ui .bd,
 .sm2-bar-ui .sm2-extra-controls {
  position: relative;
- background-color: $blue;
+ background-color: $light-gray;
  /*
  transition: background 0.2s ease-in-out;
  */
@@ -188,7 +189,7 @@
 
 .sm2-bar-ui,
 .sm2-bar-ui .bd a {
- color: #fff;
+ color: $blue;
 }
 
 .sm2-bar-ui.dark-text,
@@ -318,8 +319,13 @@
 
 .sm2-bar-ui .sm2-inline-element {
  /* extra-small em scales up nicely, vs. 1px which gets fat */
- border-right: 0.075em dotted #666; /* legacy */
- border-right: 0.075em solid rgba(0,0,0,0.1);
+ //border-right: 0.075em dotted #666; /* legacy */
+ //border-right: 0.075em solid rgba(0,0,0,0.1);
+ // border-top: 1px solid #D8D8D8;
+}
+
+.audiobar {
+  border-top: 1px solid #D8D8D8;
 }
 
 .sm2-bar-ui .sm2-inline-element.noborder {
@@ -514,24 +520,24 @@
 .sm2-icon-play-pause,
 .sm2-icon-play-pause:hover,
 .paused .sm2-icon-play-pause:hover {
- background-image: image-url('/assets/icomoon/entypo-25px-ffffff/PNG/play.png');
- background-image: none, image-url('/assets/icomoon/entypo-25px-ffffff/SVG/play.svg');
- //background-image: image-url(../../images/icomoon/entypo-25px-ffffff/PNG/play.png);
- //background-image: none, image-url(../../images/icomoon/entypo-25px-ffffff/SVG/play.svg);
+ background-image: image-url('/assets/icomoon/entypo-25px-000000/PNG/play.png');
+ background-image: none, image-url('/assets/icomoon/entypo-25px-000000/SVG/play.svg');
+ //background-image: image-url(../../images/icomoon/entypo-25px-000000/PNG/play.png);
+ //background-image: none, image-url(../../images/icomoon/entypo-25px-000000/SVG/play.svg);
  background-size: 67.5%;
  background-position: 40% 53%;
 }
 
 .playing .sm2-icon-play-pause {
- background-image: image-url('/assets/icomoon/entypo-25px-ffffff/PNG/pause.png');
- background-image: none, image-url('/assets/icomoon/entypo-25px-ffffff/SVG/pause.svg');
+ background-image: image-url('/assets/icomoon/entypo-25px-000000/PNG/pause.png');
+ background-image: none, image-url('/assets/icomoon/entypo-25px-000000/SVG/pause.svg');
  background-size: 57.6%;
  background-position: 50% 53%;
 }
 
 .sm2-volume-control {
- background-image: image-url('/assets/icomoon/entypo-25px-ffffff/PNG/volume.png');
- background-image: none, image-url('/assets/icomoon/entypo-25px-ffffff/SVG/volume.svg');
+ background-image: image-url('/assets/icomoon/entypo-25px-000000/PNG/volume.png');
+ background-image: none, image-url('/assets/icomoon/entypo-25px-000000/SVG/volume.svg');
 }
 
 .sm2-volume-control,
@@ -549,20 +555,20 @@
 }
 
 .sm2-icon-menu {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/list2.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/list2.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/list2.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/list2.svg');
  background-size: 58%;
  background-position: 54% 51%;
 }
 
 .sm2-icon-previous {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/first.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/first.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/first.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/first.svg');
 }
 
 .sm2-icon-next {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/last.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/last.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/last.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/last.svg');
 }
 
 .sm2-icon-previous,
@@ -578,15 +584,15 @@
 }
 
 .sm2-icon-shuffle {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/shuffle.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/shuffle.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/shuffle.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/shuffle.svg');
  background-size: 45%;
  background-position: 50% 50%;
 }
 
 .sm2-icon-repeat {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/loop.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/loop.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/loop.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/loop.svg');
  background-position: 50% 43%;
  background-size: 54%;
 }
@@ -647,8 +653,8 @@
 .sm2-playlist-wrapper ul li .sm2-cart,
 .sm2-playlist-wrapper ul li:hover .sm2-cart,
 .sm2-playlist-wrapper ul li.selected .sm2-cart {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/cart.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/cart.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/cart.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/cart.svg');
  /* slight alignment tweak */
  background-position: 48% 50%;
 }
@@ -656,8 +662,8 @@
 .sm2-playlist-wrapper ul li .sm2-music,
 .sm2-playlist-wrapper ul li:hover .sm2-music,
 .sm2-playlist-wrapper ul li.selected .sm2-music {
- background-image: url('icomoon/entypo-25px-ffffff/PNG/music.png');
- background-image: none, url('icomoon/entypo-25px-ffffff/SVG/music.svg');
+ background-image: url('icomoon/entypo-25px-000000/PNG/music.png');
+ background-image: none, url('icomoon/entypo-25px-000000/SVG/music.svg');
 }
 
 .sm2-bar-ui.dark-text .sm2-playlist-wrapper ul li .sm2-cart,

@@ -14,13 +14,14 @@
   & p {
   font-size: 30px;
   font-weight: lighter;
+  font-family: $body-font;
   }
 }
 
 // cards//
 .cards{
   position: absolute;
-  bottom: 0px;
+  bottom: 15px;
   margin: 0 75px;
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
 }
