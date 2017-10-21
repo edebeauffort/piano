@@ -14,13 +14,14 @@
   & p {
   font-size: 30px;
   font-weight: lighter;
+  font-family: $body-font;
   }
 }
 
 // cards//
 .cards{
   position: absolute;
-  bottom: 0px;
+  bottom: 15px;
   margin: 0 75px;
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
 }
@@ -31,7 +32,7 @@
   background-size: cover !important;
   background-position: center;
   position: relative;
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 .card-icon {
@@ -138,4 +139,8 @@ ol.carousel-indicators li.active {
     height: 40px;
     border:none;
     background-color: transparent;
+}
+
+.carousel-img {
+  width: 100%;
 }
