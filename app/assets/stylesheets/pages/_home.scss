@@ -21,7 +21,7 @@
 // cards//
 .cards{
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
   margin: 0 75px;
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
 }
@@ -123,7 +123,7 @@ ol.carousel-indicators li.active {
   float: left;
   width: 33%;
   height: 4px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   border-radius: 0;
   border: 0;
   background: transparent;
@@ -141,6 +141,28 @@ ol.carousel-indicators li.active {
     background-color: transparent;
 }
 
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1,1);
+    }
+    to {
+      -webkit-transform: scale(1.5,1.5);
+    }
+}
+
+/* Standard syntax */
+@keyframes zoom {
+   from {
+        transform: scale(1,1);
+   }
+   to {
+        transform: scale(1.5,1.5);
+   }
+}
+
 .carousel-img {
   width: 100%;
+  -webkit-animation: zoom 50s; /* Chrome, Safari, Opera */
+  animation: zoom 50s;
 }
