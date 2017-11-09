@@ -1,0 +1,38 @@
+.bio {
+  padding: 75px;
+  margin: 0 75px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  background-color: #ffffff;
+  padding: 1px 25px;
+  width: 400px;
+  align: center;
+  h1 {
+    color: $blue;
+    text-align: center;
+  }
+}
+
+.bio-content-img {
+  position: absolute;
+  left: 0;
+}
+
+.bio-content-item {
+  position: absolute;
+  right: 0;
+}
+
+.contact button {
+  background-color: $light-blue;
+  color: $gray;
+  & :hover {
+    background-color: $blue;
+    text-decoration: none;
+  }
+}
