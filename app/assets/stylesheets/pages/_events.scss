@@ -1,3 +1,19 @@
-.event-img img {
-    width: 100px;
+.events {
+  max-height: 100vh;
+  margin: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.event-img {
+  & img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+  }
+  &:hover {
+    flex-grow: 2;
+  }
 }

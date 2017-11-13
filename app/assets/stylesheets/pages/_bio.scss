@@ -11,7 +11,8 @@
   background-color: #ffffff;
   padding: 1px 25px;
   width: 400px;
-  align: center;
+  display: flex;
+  flex-direction: column;
   h1 {
     color: $blue;
     text-align: center;
@@ -28,11 +29,17 @@
   right: 0;
 }
 
-.contact button {
-  background-color: $light-blue;
+.btn-contact {
+  margin: 3% 35%;
+  border-radius: 3px;
+  background-color: $black;
   color: $gray;
-  & :hover {
-    background-color: $blue;
+  text-decoration: none;
+  &:hover {
+    background-color: $dark-gray;
     text-decoration: none;
+    color: $gray;
   }
 }
+
+
