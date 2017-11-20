@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  root to: 'pages#home'
-
   # cette ligne reprend les 7 actions CRUD commentées ci-dessous
   resources :sheets
 
@@ -25,10 +22,9 @@ Rails.application.routes.draw do
   # 7. supprimer une partition
   # delete "sheets/:id"       => "sheets#destroy"
 
-
-
-
-
-
+  resources :contacts, only: [:new, :create]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'pages/home'
+  root to: 'pages#home'
 end
