@@ -25,4 +25,3 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 Rails.application.config.assets.precompile << %w(admin/admin.js admin/admin.scss)
 Rails.application.config.assets.precompile << /fonts\/.*\.(?:eot|svg|ttf|woff2?)$/
-Rails.application.config.assets.precompile += %w(soundmanager2.swf soundmanager2_flash9.swf)
