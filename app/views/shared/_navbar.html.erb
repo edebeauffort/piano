@@ -1,8 +1,8 @@
 <div class="navbar-piano">
-
+  <div class="menu-left">
   <!-- left navigation menu -->
-  <%= link_to "Music sheets", sheets_path, class:"music-sheet" %>
-
+   <li><a> <%= link_to "Music sheets", sheets_path%></a></li>
+  </div>
   <!-- center logo -->
   <div class="logo">
     <%= link_to root_path, class: "" do %>
@@ -11,7 +11,7 @@
   </div>
 
   <!-- right navigation menu -->
-  <div class="menu">
+  <div class="menu-right">
     <ul>
       <li id="nav-recordings"><a>Musique</a></li>
       <li id="nav-bio"><a>Biographie</a></li>

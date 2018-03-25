@@ -27,10 +27,11 @@ function hasScrolled() {
   var userScroll = $(this).scrollTop();
 
   // add and remove background color when on top of page
-  if (userScroll >= 780) {
-        $(".navbar-piano").addClass("nav-down");
+  if ($(window).scrollTop() > 10) {
+    $(".navbar-piano").addClass("nav-down");
     } else {
         $(".navbar-piano").removeClass("nav-down");
+        $('.navbar-piano').addClass('nav-top');
     }
   // If they scrolled down and are past the navbar, add class .nav-up.
   // This is necessary so you never see what is "behind" the navbar.
@@ -44,7 +45,6 @@ function hasScrolled() {
       // If did not scroll past the document (possible on mac)...
     if (userScroll + $(window).height() < $(document).height()) {
       $('.navbar-piano').removeClass('nav-up');
-      //else {$('.navbar').removeClass('nav-top');}
     }
   }
   lastScrollTop = userScroll;
