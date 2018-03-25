@@ -1,3 +1,37 @@
 .contact {
-  margin-top: 75px;
+  padding-top: 17%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //background-image: url(BW_handyfriend2.jpg);
+  background-color: #272822;
+  color: white;
+}
+
+.contact-form {
+  width: 40%;
+
+}
+
+#contact_name,
+#contact_email,
+#contact_message, {
+ width: 100%;
+ margin: 3px 0 15px 0;
+ border-width: 0 0 1px 0;
+ background-color: transparent;
+ padding: 7px;
+}
+
+#btn-contact {
+  color: white;
+  background-color: $blue;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  &:hover {
+    background-color: white;
+    color: $blue;
+  }
 }

@@ -15,9 +15,11 @@ function check_if_in_view() {
     //check to see if this current container is within viewport
     if ((element_bottom_position >= window_top_position) &&
       (element_top_position <= window_bottom_position)) {
-      $element.addClass('in-view');
+      $element.addClass('in-view bounce-up');
+      $element.removeClass('out-view');
     } else {
-      $element.removeClass('in-view');
+      $element.addClass('out-view');
+      $element.removeClass('in-view bounce-up');
     }
   });
 }
